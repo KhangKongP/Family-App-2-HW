@@ -22,9 +22,9 @@ namespace FamilyApp2
                 {
                     new Label {Text = "Mee - my mother", TextColor = Color.Purple },
                     new Label {Text = "Nha - my father", TextColor = Color.Yellow },
-                    new Label {Text = "Kong - me"},
-                    new Label {Text = "Zachariah - my son" },
-                    new Label {Text = "Nouzong - my wife" }
+                    new Label {Text = "Kong - me", TextColor = Color.Orange},
+                    new Label {Text = "Zachariah - my son", TextColor = Color.Blue },
+                    new Label {Text = "Nouzong - my wife", TextColor = Color.Pink }
                 }
                
             };
