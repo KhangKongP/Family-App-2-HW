@@ -7,42 +7,39 @@ using Xamarin.Forms;
 
 namespace FamilyApp2
 {
-    class FamilyPage : ContentPage  
+    class FamilyPage : ContentPage
     {
 
         public FamilyPage()
         {
-            Content = new Label
+
+            var stackNew = new StackLayout
             {
 
-                BackgroundColor = Color.Pink,
-
-                FormattedText = new FormattedString
+                BackgroundColor = Color.Black,
+                Spacing = 3.0,
+                Orientation = StackOrientation.Vertical,
+                Children =
                 {
-                    Spans =
-                    {
-                        new Span
-                        {
-                        Text = "Nha Vang Khang  Daddy " + Environment.NewLine,
-                        FontAttributes = FontAttributes.Bold,
-                        BackgroundColor = Color.Yellow
+                    
+                    new Label {Text = "Mee - my mother ", TextColor = Color.Purple,  FontAttributes = FontAttributes.Bold, FontSize = 20, VerticalOptions = LayoutOptions.StartAndExpand, BackgroundColor = Color.Green  },
+                    new Label {Text = "Nha - my father", TextColor = Color.Yellow, FontSize = 30, FontAttributes = FontAttributes.Bold },
+                    new Label {Text = "Kong - me ", TextColor = Color.Orange, FontSize = 41, FontAttributes = FontAttributes.Bold},
+                    new Label {Text = "Zachariah - my son", TextColor = Color.Blue, FontSize = 42, FontAttributes = FontAttributes.Bold },
+                    new Label {Text = "Nouzong - my wife", TextColor = Color.Pink, FontSize = 43, FontAttributes = FontAttributes.Bold }
 
-                        },
-                        new Span
-                        {
-                            Text = "Mee Y Khang  Mommy" + Environment.NewLine,
-                            FontAttributes = FontAttributes.Bold,
-                            BackgroundColor = Color.Blue
-                        },
-                        new Span
-                        {
-                            Text = "Kong P Khang ME!" + Environment.NewLine,
-                            FontAttributes = FontAttributes.Bold,
-                            BackgroundColor = Color.Red
-                        }
-                    }
                 }
+            
+
             };
+
+            Content = new ScrollView
+            {
+                Orientation = ScrollOrientation.Vertical,
+                Content = stackNew
+                
+            };
+
 
         }
 
