@@ -12,36 +12,21 @@ namespace FamilyApp2
 
         public FamilyPage()
         {
-            Content = new Label
+            Content = new StackLayout
             {
 
                 BackgroundColor = Color.Pink,
-
-                FormattedText = new FormattedString
+                Spacing = 3.0,
+                
+                Children =
                 {
-                    Spans =
-                    {
-                        new Span
-                        {
-                        Text = "Nha Vang Khang  Daddy " + Environment.NewLine,
-                        FontAttributes = FontAttributes.Bold,
-                        BackgroundColor = Color.Yellow
-
-                        },
-                        new Span
-                        {
-                            Text = "Mee Y Khang  Mommy" + Environment.NewLine,
-                            FontAttributes = FontAttributes.Bold,
-                            BackgroundColor = Color.Blue
-                        },
-                        new Span
-                        {
-                            Text = "Kong P Khang ME!" + Environment.NewLine,
-                            FontAttributes = FontAttributes.Bold,
-                            BackgroundColor = Color.Red
-                        }
-                    }
+                    new Label {Text = "Mee - my mother", TextColor = Color.Purple },
+                    new Label {Text = "Nha - my father", TextColor = Color.Yellow },
+                    new Label {Text = "Kong - me"},
+                    new Label {Text = "Zachariah - my son" },
+                    new Label {Text = "Nouzong - my wife" }
                 }
+               
             };
 
         }
