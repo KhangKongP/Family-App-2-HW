@@ -12,8 +12,10 @@ namespace FamilyApp2
 
         public FamilyPage()
         {
+
             var stackNew = new StackLayout
             {
+                
 
                 BackgroundColor = Color.Black,
                 Spacing = 3.0,
